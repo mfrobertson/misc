@@ -1,0 +1,25 @@
+\documentclass{article}
+\usepackage[style=numeric,sorting=none]{biblatex}
+
+\makeindex
+
+\title{Xivcite Example}
+\author{Mathew Robertson}
+\date{2023/04/17}
+
+\newcommand{\bibfile}{example.bib}
+\newcommand{\xivcite}{\input{|./xivcite.sh \jobname.tex \bibfile}}
+
+\addbibresource{\bibfile}
+\xivcite
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+In this document the xivcite script is tested. This package takes care of citations using arXiv referencing. E.g.  \cite{?2303.13313} \cite{?astro-ph/0601594}.
+
+
+\printbibliography
+\end{document}

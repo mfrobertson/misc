@@ -10,7 +10,7 @@ Setup is simple
   ```
   \input{|./xivcite.sh \jobname.tex <bibfile>}
   ```
-- Ensure ```--enable-write18``` flag is passed at compile time (sometime ```--shell-escape```
+- Ensure ```--enable-write18``` flag is passed at compile time (sometimes ```--shell-escape```
 depending on TeX distribution).
 ### Usage
 Now any desired citations can be automatically added to the chosen ```<bibfile>``` through the familiar command 

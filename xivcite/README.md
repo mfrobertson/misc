@@ -3,7 +3,7 @@
 Auto-citation product for use in LaTeX using just arXiv ID. References are taken using the 
 [iNSPIREHEP](https://inspirehep.net/) REST API.
 
-### Setup
+### Set up
 Setup is simple
 - Place ```xivcite.sh``` in same directory as the ```.tex``` file
 - Add the following line to the ```.tex``` file anywhere before ```\begin{document}```

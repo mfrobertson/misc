@@ -27,8 +27,8 @@ done
 SCREEN_EXIST=$(screen -list | grep $SCREEN_NAME >>\dev\null; echo $?)
 
 if [[ $SCREEN_EXIST -eq 1 ]] || [[ $FORCE = true ]]; then
-screen -S $SCREEN_NAME -X quit
 
+screen -S $SCREEN_NAME -X quit >> \dev\null
 [ -e screenlog.0 ] && rm screenlog.0
 screen -S $SCREEN_NAME -d -m -L
 screen -S $SCREEN_NAME -X stuff "qlogin -l h_vmem=$MEM -q $QUEUE\r"

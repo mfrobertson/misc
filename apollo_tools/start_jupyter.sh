@@ -24,7 +24,7 @@ while getopts 'fn:' flag; do
   esac
 done
 
-SCREEN_EXIST=$(screen -list | grep $SCREEN_NAME >>\dev\null; echo $?)
+SCREEN_EXIST=$(screen -list | grep $SCREEN_NAME >>/dev/null; echo $?)
 
 if [[ $SCREEN_EXIST -eq 1 ]] || [[ $FORCE = true ]]; then
 

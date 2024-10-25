@@ -31,6 +31,7 @@ CONDA_ENV=<your_conda_env>
 PORT=<port_of_choice>
 CONDA_VERSION="2020.11"
 JC="verylong"
+PASSWORD=supersecretpassword
 
 JUPYTER=false
 VSCODE=false
@@ -63,7 +64,7 @@ fi
 
 if [[ $VSCODE = true ]]; then
 screen -S $SCREEN_NAME -X stuff "module load code-server\r"
-screen -S $SCREEN_NAME -X stuff "echo -e '\nbind-addr: 0.0.0.0:$((PORT+1))\nauth: password\npassword: vscodepassword\ncert: false'>~/.config/code-server/config.yaml\r"
+screen -S $SCREEN_NAME -X stuff "echo -e '\nbind-addr: 0.0.0.0:$((PORT+1))\nauth: password\npassword: $PASSWORD\ncert: false'>~/.config/code-server/config.yaml\r"
 screen -S $SCREEN_NAME -X stuff "code-server\r"
 fi
 

@@ -1,11 +1,11 @@
 # Apollo Tools
 
-### Jupyter on Apollo
-Quick scripts for automating jupyter notebook connections on University of Sussex Apollo
+### Jupyter (and vscode) on Apollo
+Quick scripts for automating jupyter notebook (or web vscode) connections on University of Sussex Apollo
 HPC. 
 
 ### Instructions
-- Edit parameters in ```start_service.sh``` and ```open_jupyter_port_forward.sh``` and ```open_jupyter_port_forward.sh``` to match your use-case 
+- Edit parameters in ```start_service.sh``` and ```open_port_forward.sh``` to match your use-case 
 (ensure same ports in start_service match the ports in the port_forward scripts) 
 - Execute script on Apollo to start jupyter or vscode (for 2 cores each with 4G ram)
   ```

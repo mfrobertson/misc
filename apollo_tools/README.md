@@ -19,11 +19,7 @@ HPC.
   ```
 - Now on your local machine execute either 
   ```
-  $ open_jupyter_port_forward.sh <node_id>
-  ```
-or
-  ```
-  $ open_jupyter_port_forward.sh <node_id>
+  $ open_port_forward.sh <node_id> <port>
   ```
   where ```<node_id>``` matches the previously output Node number (in this example ```007```)
 - Everything is set up and the jupyter (or vscode) session can now be accessed on your local machine at the specified url

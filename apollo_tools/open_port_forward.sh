@@ -1,7 +1,7 @@
 #! /bin/bash
 
 NODE=$1
-PORT=<port_of_choice>
+PORT=$2
 USER=<your_sussex_username>
 
 lsof -ti:$PORT | xargs kill -9

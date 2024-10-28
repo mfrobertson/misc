@@ -52,7 +52,7 @@ if [[ $SCREEN_EXIST -eq 1 ]] || [[ $FORCE = true ]]; then
 screen -S $SCREEN_NAME -X quit >> \dev\null
 [ -e screenlog.0 ] && rm screenlog.0
 screen -S $SCREEN_NAME -d -m -L
-screen -S $SCREEN_NAME -X stuff "qlogin -N $TYP -now no -jc $JC -l h_vmem=$MEM -q $QUEUE -pe openmp $NCORE -l 'h=!node010&!node018&!node019'\r"
+screen -S $SCREEN_NAME -X stuff "qlogin -N $TYP -now no -jc $JC -l h_vmem="${MEM}G" -q $QUEUE -pe openmp $NCORE -l 'h=!node010&!node018&!node019'\r"
 
 if [[ $JUPYTER = true ]]; then
 screen -S $SCREEN_NAME -X stuff "module load easybuild/software\r"
